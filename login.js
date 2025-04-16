@@ -32,7 +32,10 @@ const googleLogin = async () => {
     if (!userDoc.exists()) {
       // Save the user's Gmail ID to the user document
       await setDoc(userRef, { email: user.email }, { merge: true });
-
+      
+      //hide the loading message
+      indexLoginContainer.style.display = "none";
+      
       //show login again
       loginContainer.style.display = "block"; // Makes it visible again
 
@@ -45,6 +48,10 @@ const googleLogin = async () => {
 
     // If the admin hasn't assigned a role yet, deny access
     if (!userData.role) {
+
+       //hide the loading message
+      indexLoginContainer.style.display = "none";
+      
       //show login again
       loginContainer.style.display = "block"; // Makes it visible again
       alert("Your account is not approved yet. Please contact the admin.");
