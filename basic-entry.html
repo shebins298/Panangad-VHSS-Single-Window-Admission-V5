@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Basic Student Entry</title>
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Link to external stylesheet -->
+  </head>
+  <body>
+    <div class="container">
+      <h2>Basic Student Details Entry</h2>
+
+      <form id="student-form">
+        <label for="student-name">Student Name:</label>
+        <input type="text" id="student-name" required />
+
+        <label for="contact-number">Contact Number:</label>
+        <input type="tel" id="contact-number" required />
+
+        <button type="submit">Submit</button>
+      </form>
+
+      <button id="back-button" class="back-btn">Back</button>
+    </div>
+
+    <script type="module" src="basic-entry.js"></script>
+  </body>
+</html>

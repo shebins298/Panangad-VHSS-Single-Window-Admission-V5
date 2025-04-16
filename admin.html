@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="loading">Checking login status...</div>
+
+    <div id="admin-content" style="display: none">
+      <h1>Admin Dashboard</h1>
+      <button
+        id="basic-entry"
+        onclick="window.location.href = 'basic-entry.html';"
+      >
+        Basic Student Details Entry
+      </button>
+      <button
+        id="app-details"
+        onclick="window.location.href = 'app-details.html';"
+      >
+        Application Details Entry
+      </button>
+      <button
+        id="admin-panel"
+        onclick="window.location.href = 'admincontrolpanel.html';"
+      >
+        Admin Control Panel
+      </button>
+      <button id="logout">Logout</button>
+    </div>
+
+    <script type="module" src="admin.js"></script>
+  </body>
+</html>

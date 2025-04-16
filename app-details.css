@@ -1,0 +1,111 @@
+/* General Table Styling */
+.students-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Table Header */
+.students-table th {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+  padding: 12px;
+  text-align: center;
+}
+
+/* Table Rows */
+.students-table td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Alternating Row Colors */
+.students-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Hover Effect */
+.students-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Input Fields */
+.students-table input[type="text"],
+.students-table textarea {
+  width: 90%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* Buttons Styling */
+.students-table button,
+.update-student,
+#update-button,
+#back-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 14px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Update Button */
+.update-student {
+  background-color: #28a745;
+}
+
+.update-student:hover {
+  background-color: #218838;
+}
+
+/* Back Button */
+#back-button {
+  background-color: #dc3545;
+}
+
+#back-button:hover {
+  background-color: #c82333;
+}
+
+/* Centering Buttons */
+.buttons-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .students-table {
+    font-size: 12px;
+  }
+
+  .students-table input,
+  .students-table textarea {
+    font-size: 12px;
+  }
+
+  .students-table button {
+    font-size: 12px;
+    padding: 8px 12px;
+  }
+}
+
+.last-updated {
+  margin-top: 5px;
+  padding: 5px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  font-size: 12px;
+  color: #555;
+}

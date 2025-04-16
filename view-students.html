@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>View Student List</title>
+    <link rel="stylesheet" href="view-students.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Student List</h1>
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Sl No</th>
+              <th>Timestamp</th>
+              <th>Name</th>
+              <th>Contact</th>
+              <th>Application No</th>
+              <th>Science Option</th>
+              <th>Commerce Option</th>
+              <th>Remarks</th>
+            </tr>
+          </thead>
+          <tbody id="student-list">
+            <!-- Data will be inserted here dynamically -->
+          </tbody>
+        </table>
+      </div>
+      <button id="back-button" class="back-button">Back</button>
+    </div>
+
+    <script type="module" src="view-students.js"></script>
+  </body>
+</html>

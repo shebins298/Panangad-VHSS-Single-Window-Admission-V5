@@ -1,0 +1,99 @@
+/* General Styling */
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f7;
+  color: #333;
+}
+
+/* Card Container */
+.container {
+  max-width: 95%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Table Wrapper - Enables Scrolling */
+.table-container {
+  width: 100%;
+  overflow-x: auto; /* Enables scrolling if needed */
+  padding-bottom: 10px;
+}
+
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  min-width: 1200px; /* Ensures all columns fit */
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  white-space: nowrap; /* Prevents text from wrapping */
+}
+
+th {
+  background-color: #0071e3;
+  color: white;
+  font-weight: 600;
+}
+
+/* Back Button */
+.back-button {
+  display: inline-block;
+  background: #0071e3;
+  color: white;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background: #005bb5;
+}
+
+/* Center the Back Button */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Responsive Fix */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+
+  .table-container {
+    overflow-x: auto; /* Ensures horizontal scrolling on small screens */
+  }
+
+  table {
+    min-width: 1500px; /* Prevents cutting off data */
+  }
+
+  th,
+  td {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .back-button {
+    width: 100%;
+  }
+}
